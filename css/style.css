@@ -15,8 +15,15 @@
   padding: 0 2rem;
 }
 
+.container-violet {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #9792e4;
+}
+
 section {
-  padding: 2rem 0;
+  margin: 3rem 0;
 }
 
 /* LAYOUT */
@@ -133,6 +140,87 @@ nav {
   line-height: 25px;
 }
 
+/* PLANNING SECTION */
+
+.planning {
+  padding: 20px 20px 60px 20px;
+}
+
+.planning img {
+  width: 100%;
+}
+
+.planning * {
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+.strategic-plan {
+  color: white;
+}
+
+.title-plan {
+  font-size: 2rem;
+}
+
+.planning-card {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.btn-planning {
+  width: 50px;
+  height: 50px;
+  background-color: #9792e4;
+  border-radius: 50%;
+  border: none;
+  line-height: 50px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonials * {
+  margin-bottom: 20px;
+}
+
+.testimonials h4 {
+  font-weight: normal;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: #9792e4;
+}
+
+.testimonials p {
+  line-height: 25px;
+}
+
+.testimonial-card {
+  background-color: #9792e4;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.testimonial-img img {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+  border-radius: 50%;
+}
+
+.testimonial-card h3 {
+  padding-bottom: 30px;
+}
+
 /* RESPONSIVE */
 
 @media screen and (min-width: 768px) {
@@ -140,16 +228,16 @@ nav {
     width: calc(100% / 3 * 2 - 30px);
     text-align: left;
   }
-}
 
-.intro-card {
-  width: calc(100% / 3 - 22px);
-  margin-right: 15px;
-}
+  .intro-card {
+    width: calc(100% / 3 - 22px);
+    margin-right: 15px;
+  }
 
-.card-container img {
-  position: relative;
-  left: -12.5%;
+  .card-container img {
+    position: relative;
+    left: -12.5%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
