@@ -15,6 +15,10 @@
   padding: 0 2rem;
 }
 
+section {
+  padding: 2rem 0;
+}
+
 /* LAYOUT */
 #header {
   height: 100px;
@@ -56,7 +60,97 @@ nav {
   color: white;
 }
 
+/* INTRO */
+
+.intro-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro-card {
+  background-color: #b5ddff;
+  border-radius: 10px;
+  padding: 15px 0 0 0;
+  text-align: center;
+  color: #62778a;
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+
+.card-container {
+  width: 75%;
+  margin: auto;
+}
+
+.card-container * {
+  margin-bottom: 20px;
+}
+
+.card-container h2 {
+  color: #0084fd;
+}
+
+.card-container img {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  bottom: -4px;
+}
+
+.intro-btn {
+  width: 75%;
+  line-height: 40px;
+  background-color: #0084fd;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+}
+
+.intro-btn * {
+  margin-right: 5px;
+}
+
+.card-container i {
+  font-size: 4rem;
+  color: #0084fd;
+}
+
+.intro-btn > i {
+  font-size: medium;
+  color: white;
+}
+
+.big:first-child {
+  text-align: left;
+}
+
+.card-container p {
+  padding-bottom: 20px;
+  line-height: 25px;
+}
+
 /* RESPONSIVE */
+
+@media screen and (min-width: 768px) {
+  .intro-card:first-child {
+    width: calc(100% / 3 * 2 - 30px);
+    text-align: left;
+  }
+}
+
+.intro-card {
+  width: calc(100% / 3 - 22px);
+  margin-right: 15px;
+}
+
+.card-container img {
+  position: relative;
+  left: -12.5%;
+}
 
 @media screen and (min-width: 1000px) {
   .nav-menu {
