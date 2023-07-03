@@ -208,13 +208,18 @@ nav {
   border-radius: 20px;
   text-align: center;
 }
-
-.testimonial-img img {
+.testimonial-img {
   display: inline-block;
-  width: 150px;
-  height: 150px;
-  margin-top: 30px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
   border-radius: 50%;
+}
+.testimonial-img img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
 }
 
 .testimonial-card h3 {
