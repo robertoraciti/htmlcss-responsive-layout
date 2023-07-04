@@ -301,7 +301,7 @@ nav {
 }
 
 .benefits-btn {
-  width: 50%;
+  width: 150px;
   line-height: 40px;
   background-color: #9792e4;
   color: white;
@@ -354,12 +354,85 @@ nav {
 }
 
 .about-us-btn {
-  width: 50%;
+  width: 150px;
   line-height: 40px;
   background-color: #9792e4;
   color: white;
   border-radius: 20px;
   border: none;
+}
+
+/* FOOTER */
+
+footer section {
+  margin: 0;
+}
+
+#upper-footer {
+  background-color: #9792e4;
+  color: lightgray;
+}
+
+#upper-footer h4 {
+  font-weight: normal;
+  padding-top: 40px;
+}
+
+#upper-footer h3 {
+  font-size: 2rem;
+  color: white;
+}
+
+#upper-footer h2 {
+  font-size: 3rem;
+  color: #fdc15f;
+}
+
+#upper-footer .col:first-child {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+#upper-footer .col:first-child * {
+  margin-bottom: 30px;
+}
+
+.footer-btn {
+  width: 200px;
+  line-height: 60px;
+  background-color: white;
+  color: #9792e4;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#upper-footer .col:last-child {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+#upper-footer span {
+  text-decoration: underline;
+}
+
+#lower-footer {
+  background-color: #333333;
+}
+
+#lower-footer .col {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  color: #dcdcdc;
+}
+
+#lower-footer span {
+  text-decoration: underline;
+  color: #827ebf;
 }
 
 /* RESPONSIVE */
@@ -390,10 +463,13 @@ nav {
   .testimonial-card {
     display: flex;
     align-items: flex-end;
+    text-align: left;
   }
 
   .testimonial-img {
     width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
   }
 
   .testimonial-text {
