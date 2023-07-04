@@ -9,7 +9,7 @@
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 2rem;
@@ -158,8 +158,8 @@ nav {
 
 /* PLANNING SECTION */
 
-.planning {
-  padding: 20px 32px 60px 32px;
+#planning {
+  background-color: #9792e4;
 }
 
 #planning .row {
@@ -264,6 +264,9 @@ nav {
 }
 
 /* BENEFITS */
+#benefits {
+  background-color: #9792e4;
+}
 
 #benefits .row {
   width: 100%;
@@ -306,6 +309,59 @@ nav {
   border: none;
   font-weight: bold;
 }
+
+/* ABOUT US */
+
+#about-us .row {
+  width: 100%;
+  margin: auto;
+}
+
+#about-us h2 {
+  font-size: 2.5rem;
+  color: #9792e4;
+  margin-bottom: 30px;
+}
+
+#about-us .col:first-child {
+  line-height: 25px;
+}
+
+#about-us p {
+  margin-bottom: 30px;
+}
+
+#about-us .circle-img {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 0;
+}
+#about-us .circle-img img {
+  width: auto;
+  height: 100%;
+  margin-left: 0;
+}
+
+#about-us h3 {
+  font-size: 2rem;
+  color: #9792e4;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.about-us-btn {
+  width: 50%;
+  line-height: 40px;
+  background-color: #9792e4;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
+
 /* RESPONSIVE */
 
 @media screen and (min-width: 768px) {
@@ -323,6 +379,14 @@ nav {
     flex-direction: column;
   }
 
+  .intro-text {
+    width: 50%;
+  }
+
+  .intro-img {
+    width: 50%;
+  }
+
   .testimonial-card {
     display: flex;
     align-items: flex-end;
@@ -334,6 +398,23 @@ nav {
 
   .testimonial-text {
     width: calc(100% / 3 * 2);
+  }
+
+  #benefits .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #benefits .col {
+    width: 50%;
+  }
+
+  #about-us .row {
+    display: flex;
+  }
+
+  #about-us .col {
+    width: 50%;
   }
 }
 
@@ -347,16 +428,7 @@ nav {
   }
 
   .big {
-    display: flex;
     flex-direction: row;
-  }
-
-  .intro-text {
-    width: 50%;
-  }
-
-  .intro-img {
-    width: 50%;
   }
 
   #planning .row {
@@ -367,11 +439,11 @@ nav {
   }
 
   #planning .col:first-child {
-    width: 70%;
+    width: 60%;
   }
 
   #planning .col:last-child {
-    width: 30%;
+    width: 40%;
     display: flex;
     align-items: flex-end;
   }
@@ -387,5 +459,17 @@ nav {
 
   .testimonial-text {
     width: calc(100% / 3 * 2);
+  }
+
+  #benefits .col {
+    width: calc(100% / 3);
+  }
+
+  #about-us .col:first-child {
+    width: 60%;
+  }
+
+  #about-us .col:last-child {
+    width: 40%;
   }
 }
