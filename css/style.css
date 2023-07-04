@@ -85,6 +85,8 @@ nav {
 #intro .row {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
 }
 
 .intro-card {
@@ -151,6 +153,7 @@ nav {
 .card-container p {
   padding-bottom: 20px;
   line-height: 25px;
+  color: #62778a;
 }
 
 /* PLANNING SECTION */
@@ -260,6 +263,49 @@ nav {
   padding-bottom: 30px;
 }
 
+/* BENEFITS */
+
+#benefits .row {
+  width: 100%;
+  margin: auto;
+}
+
+#benefits h2 {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.benefits-card {
+  background-color: white;
+  color: #9792e4;
+  border-radius: 20px;
+  padding: 40px 20px 20px 20px;
+}
+
+.benefits-card * {
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+#benefits h4 {
+  font-size: 3rem;
+}
+
+#benefits p {
+  color: #62778a;
+}
+
+.benefits-btn {
+  width: 50%;
+  line-height: 40px;
+  background-color: #9792e4;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+}
 /* RESPONSIVE */
 
 @media screen and (min-width: 768px) {
@@ -276,11 +322,6 @@ nav {
     display: flex;
     flex-direction: column;
   }
-
-  /* .card-container img {
-    position: relative;
-    left: -12.5%;
-  } */
 
   .testimonial-card {
     display: flex;
